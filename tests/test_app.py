@@ -1,4 +1,4 @@
-from PyQt4 import QtGui
+from qtpy import QtGui
 
 
 def get_string(prompt="What is your name? ", title="Title",
