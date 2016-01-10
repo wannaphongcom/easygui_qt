@@ -1,8 +1,4 @@
-
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 class WizardCreator(QtGui.QWizard):
     def __init__(self, title="Title", pages=[]):
