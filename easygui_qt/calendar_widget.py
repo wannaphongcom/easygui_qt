@@ -1,8 +1,4 @@
-
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 class CalendarWidget(QtGui.QWidget):
     """Creates a calendar widget allowing the user to select a date."""
