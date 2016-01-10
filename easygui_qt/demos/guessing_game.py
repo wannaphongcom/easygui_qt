@@ -22,10 +22,10 @@ def guessing_game():
         Note that <b>Default</b> is reverting back to the
         local PyQt default (likely English).</p>"""
 
-    eg.show_message(message=message, title="For information")
+    eg.show(message=message, title="For information")
     eg.get_language()
 
-    eg.show_message(message="Hello {}. Let's play a game".format(name),
+    eg.show(message="Hello {}. Let's play a game".format(name),
                       title="Guessing game!")
 
     guess = min_ = 1
@@ -50,15 +50,14 @@ def guessing_game():
             max_ = guess
     else:
         message="Congratulations {}! {} was the answer.".format(name, guess)
-        eg.show_message(message, title="You win!")
+        eg.show(message, title="You win!")
 
 
 if __name__ == '__main__':
-    eg.show_message("Temporarily setting the locale to Spanish.")
+    eg.show("Temporarily setting the locale to Spanish.")
     eg.set_language('es')
-    eg.show_message("Increasing the font size to 14.")
+    eg.show("Increasing the font size to 14.")
     eg.set_font_size(14)
     guessing_game()
     eg.set_font_size(12)
-    eg.show_message("Changed the font size down to 12.")
-
+    eg.show("Changed the font size down to 12.")
