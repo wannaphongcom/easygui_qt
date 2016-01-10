@@ -12,7 +12,7 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 requirements = [
-    # TODO: put package requirements here
+    'qtpy',# TODO: put package requirements here
 ]
 
 test_requirements = [
@@ -33,7 +33,7 @@ setup(
     package_dir={'easygui_qt':
                  'easygui_qt'},
     include_package_data=True,
-    install_requires='',
+    install_requires=requirements,
     license="BSD",
     zip_safe=False,
     keywords='easygui_qt',
