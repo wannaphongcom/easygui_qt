@@ -2,10 +2,7 @@
 import collections
 import os
 import sys
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 if sys.version_info >= (3,):
     unicode = str
