@@ -4,10 +4,7 @@ try:
 except:
     import utils
 
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 class LanguageSelector(QtGui.QDialog):
     """A specially constructed dialog which uses informations about
