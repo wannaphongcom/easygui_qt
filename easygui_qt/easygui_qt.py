@@ -14,10 +14,7 @@ else:
     import configparser
     unicode = str
 
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 
 try:
