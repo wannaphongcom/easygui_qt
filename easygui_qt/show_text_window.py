@@ -5,10 +5,7 @@ though it was an html file or a simple text file.
 The syntax highlighter for Python code is really inadequate;  HELP!! :-)
 """
 
-try:
-    from PyQt4 import QtGui, QtCore
-except ImportError:
-    from PyQt5 import QtGui, QtCore  # untested
+from qtpy import QtGui, QtCore
 
 import keyword
 import sys
